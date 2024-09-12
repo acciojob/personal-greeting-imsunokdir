@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./../styles/App.css";
+import DisplayName from "./DisplayName";
 
 const App = () => {
   const [name, setName] = useState("");
@@ -12,7 +13,7 @@ const App = () => {
       <label for="name">Enter your name: </label>
       <br></br>
       <input id="name" onInput={handleInput}></input>
-      <div>{name}</div>
+      <DisplayName name={name} />
     </div>
   );
 };
