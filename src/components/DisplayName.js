@@ -1,7 +1,7 @@
 import React from "react";
 
 const DisplayName = ({ name }) => {
-  return <div>{name}</div>;
+  return <p>{name}</p>;
 };
 
 export default DisplayName;
